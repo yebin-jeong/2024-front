@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지뢰찾기</title>
+    <link rel="icon" href="assets/images/minesweeper.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <section class="container">
+                <h1>Mine Sweeper</h1>
+                <div class="scoreboard">  
+                    <div class="scoreboard-item">
+                        💣 <span id="mine-count">000</span>
+                    </div>
+                    <img src="assets/images/smile.png" alt="Smile Image" class="smile">
+                    <div class="scoreboard-item">
+                        ⏱ <span id="time">000</span>
+                    </div>
+                </div>     
+                <div id="board" class="board"></div>
+            </section>
+        </header>
+    </div>    
+    <script src="assets/js/script.js"></script>
+</body>    
+</html>
