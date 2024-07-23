@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    background-color: #6d7a89; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container h1 {
+    font-size: 3vw;
+    color: #ecf0f1;
+}
+
+.smile {
+    width: 5vw;
+    height: auto;
+}
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.scoreboard-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ed3d11; 
+    background-color: #211f1f; 
+    padding: 8px; 
+    border-radius: 5px; 
+}
+
+#mine-count, #time {
+    margin-left: 5px; 
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(15, 40px);
+    gap: 5px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.cell{
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.cell:hover{
+    background-color: #bbb;
+}
+
+h1{
+    color: #333;
+}
