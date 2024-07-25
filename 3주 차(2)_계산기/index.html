@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <link rel="icon" href="assets/images/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+   
+<body>
+    <section class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <div class="button clear" onclick="clearDisplay()">CE</div>
+            <div class="button operator" onclick="appendOperator('+')">+</div>
+            <div class="button operator" onclick="appendOperator('-')">-</div>
+            <div class="button operator" onclick="appendOperator('*')">*</div>
+            <div class="button operator" onclick="appendOperator('/')">/</div>
+    
+            <div class="button" onclick="appendNumber('1')">1</div>
+            <div class="button" onclick="appendNumber('2')">2</div>
+            <div class="button" onclick="appendNumber('3')">3</div>
+            <div class="button" onclick="appendNumber('4')">4</div>
+            <div class="button" onclick="appendNumber('5')">5</div>
+            <div class="button" onclick="appendNumber('6')">6</div>
+            <div class="button" onclick="appendNumber('7')">7</div>
+            <div class="button" onclick="appendNumber('8')">8</div>
+            <div class="button" onclick="appendNumber('9')">9</div>
+            <div class="button" onclick="appendNumber('0')" style="grid-column: span 2;">0</div>
+            <div class="button history-button" onclick="toggleHistory()">⏱️</div>
+            <div class="button equals" onclick="calculate()" style="grid-column: span 2;">=</div>
+            <div class="button delete" onclick="deleteLast()">⌫</div>            
+        </div>
+    </section>
+    
+    <section class="history" id="history" style="display:none;">
+        <h3>연산 기록</h3>
+        <ul id="historyList"></ul>
+    </section>    
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
