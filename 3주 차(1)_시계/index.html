@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계</title>
+    <link rel="icon" href="assets/images/timer.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="battery">Battery: 100%</div>
+            <div id="clock">00-00-00 00:00:00</div>
+            <div id="weather">Loading weather...</div>
+        </div>
+        <div class="alarms">
+            <div id="alarm-list"></div>
+            <div id="alarm-settings">
+                <input type="number" id="hours" placeholder="HH" min="0" max="23">
+                <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+                <button onclick="addAlarm()">Add Alarm</button>
+            </div>
+        </div>
+        <div class="controls">
+            <select id="theme-selector" onchange="changeTheme(event)">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        <div class="stopwatch">
+            <div id="stopwatch-time">00:00:00</div>
+            <button onclick="startStopwatch()">Start</button>
+            <button onclick="stopStopwatch()">Stop</button>
+            <button onclick="resetStopwatch()">Reset</button>
+        </div>
+    </div>
+    <script src="assets/js/alarm-weather.js"></script>
+    <script src="assets/js/battery-clock.js"></script>
+    <script src="assets/js/stopwatch-theme.js"></script>
+</body>
+</html>
