@@ -1,0 +1,96 @@
+#todo-section {
+    flex: 1;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#selected-date {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+li.work {
+    border-left: 5px solid #007bff;
+}
+
+li.personal {
+    border-left: 5px solid #28a745;
+}
+
+li.others {
+    border-left: 5px solid #ffc107;
+}
+
+li:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;  /* Ensure some spacing from the text */
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
